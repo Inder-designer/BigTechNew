@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header position-fixed w-100">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="./index.html"
+                    ><img src="./images/logo.png" alt="Aurres" class="img-fluid" />
+                </a>
+                <button class="navbar-toggler order-3" id="tgl_btn" type="button" >
+                    <span><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center" id="nav_menu" >
+                            <li class="nav-item active" >
+                                <a class="nav-link "href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#features">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#get_started">Roadmap</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#privacy">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#get_wallet">Blogs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link contact-us" href="#footer">Contact Us</a>
+                            </li>
+                            <li class="nav-item d-block d-md-none">
+                                <a href="#" class="nav-link">Buy Now</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav_right ms-auto">
+                    <ul class="navbar-nav mb-0 align-items-center">
+                        <li class="nav-item header-lang d-none d-xl-block">
+                            <span class="selected_lang">ENG</span>
+                            <ul class="lang-list">
+                                <li><a href="#">IND</a></li>
+                                <li><a href="#">SPA</a></li>
+                                <li><a href="#">GRE</a></li>
+                                <li><a href="#">CIN</a></li> 
+                            </ul> 
+                        </li>
+                        <li class="nav-item d-none d-md-block">
+                            <a href="#" class="nav-link btn">Buy Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Banner Start  -->
+    <section class="banner">
+        <div class="banner_img">
+            <img src="./images/banner_shape01.png" alt="" class="img_1">
+            <img src="./images/banner_shape02.png" alt="" class="img_2">
+            <img src="./images/banner_shape03.png" alt=""  class="img_3">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-10 mx-auto text-center">
+                    <div class="banner-heading">
+                        <img src="./images/fire.png" alt="" class="img-fluid mb-4">
+                        <h1>Join Future Of Algorithmic <span>Crypto</span> Trading Strategies</h1>
+                    </div>
+                    <div class="banner-progress-wrap">
+                        <ul class="d-flex justify-content-between p-0 list-unstyled mx-5">
+                            <li>Pre Sale</li>
+                            <li>Soft Cap</li>
+                            <li>Bonus</li>
+                        </ul>
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 62%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        <h4 class="title d-flex flex-wrap align-items-center mb-0">65% target raised <span class="ms-auto">1 ETH = $1000 = 3177.38 CIC</span></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10 text-center mx-auto">
+                    <div class="banner_bottom">
+                        <h2>ICO Will Start In..</h2>
+                        <div id="countdown">
+                            <ul class=" p-0 list-unstyled d-flex justify-content-center align-items-center flex-wrap">
+                              <li><span id="days"></span>days</li>
+                              <li><span id="hours"></span>Hours</li>
+                              <li><span id="minutes"></span>Minutes</li>
+                              <li><span id="seconds"></span>Seconds</li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner End  -->
+
+    <!-- Who We Are Start  -->
+    <section class="who-we-are">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <img src="./images/about_img01.png" alt="" class="ing-fluid">
+                </div>
+                <div class="col-6 align-self-center">
+                    <div class="who-we-are-wrap">
+                        <h3>Who We Are</h3>
+                        <h2>The World’s 1st ICO Platform That Offers Rewards</h2>
+                        <p>The World’s <span>1st ICO</span> Platform That Offers Rewards and The platform helps investors to make easy to purchase and sell their tokens</p>
+                        <a href="#" class="btn">Purchase Tokens</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/custom.js"></script>
+</body>
+</html>
