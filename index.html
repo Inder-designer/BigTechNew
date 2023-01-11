@@ -6,53 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="header position-fixed w-100">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg">
+    <header class="header position-fixed w-100 py-2 py-lg-0">
+        <div class="container cstm-container">
+            <nav class="navbar navbar-expand-lg justify-content-between py-0">
                 <a class="navbar-brand" href="./index.html"
                     ><img src="./images/logo.png" alt="Aurres" class="img-fluid" />
                 </a>
-                <button class="navbar-toggler order-3" id="tgl_btn" type="button" >
-                    <span><i class="fa-solid fa-bars"></i></span>
-                </button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" ></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center" id="nav_menu" >
-                            <li class="nav-item active" >
-                                <a class="nav-link "href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#features">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#get_started">Roadmap</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#privacy">Team</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#get_wallet">Blogs</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link contact-us" href="#footer">Contact Us</a>
-                            </li>
-                            <li class="nav-item d-block d-md-none">
-                                <a href="#" class="nav-link">Buy Now</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="nav-menu d-none d-lg-block">
+                    <ul class="navbar-nav justify-content-center mb-2 mb-lg-0 align-items-center" id="nav_menu" >
+                        <li class="nav-item active" >
+                            <a class="nav-link "href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#roadmap">Roadmap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#get_wallet">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link contact-us" href="#contact">Contact Us</a>
+                        </li>
+                        <li class="nav-item d-block d-md-none">
+                            <a href="#" class="nav-link">Buy Now</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="nav_right ms-auto">
+                <div class="nav_right d-flex">
                     <ul class="navbar-nav mb-0 align-items-center">
                         <li class="nav-item header-lang d-none d-xl-block">
                             <span class="selected_lang">ENG</span>
@@ -67,28 +59,70 @@
                             <a href="#" class="nav-link btn">Buy Now</a>
                         </li>
                     </ul>
+                    <button class="nav_btn d-block d-lg-none ms-3">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
                 </div>
             </nav>
         </div>
     </header>
     <!-- Header End -->
 
+    <!-- Side Menu  -->
+    <div class="side-menu">
+        <div class="backdrop">Tap to Close</div>
+        <div class="body">
+            <div class="side-logo px-4">
+                <a class="navbar-brand" href="./index.html"
+                    ><img src="./images/logo.png" alt="Aurres" class="img-fluid" width="80" />
+                </a>
+                <button class="close_btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <ul class="side-nav">
+                <li class="nav-item active" >
+                    <a class="nav-link "href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#roadmap">Roadmap</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#get_wallet">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link contact-us" href="#contact">Contact Us</a>
+                </li>
+                <li class="nav-item d-block d-md-none">
+                    <a href="#" class="nav-link">Buy Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Side Menu End -->
+
     <!-- Banner Start  -->
     <section class="banner">
         <div class="banner_img">
             <img src="./images/banner_shape01.png" alt="" class="img_1">
             <img src="./images/banner_shape02.png" alt="" class="img_2">
-            <img src="./images/banner_shape03.png" alt=""  class="img_3">
+            <img src="./images/banner_shape03.png" alt=""  class="img_3 d-none d-lg-block">
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-10 mx-auto text-center">
+                <div class="col-lg-10 mx-auto text-center">
                     <div class="banner-heading">
                         <img src="./images/fire.png" alt="" class="img-fluid mb-4">
                         <h1>Join Future Of Algorithmic <span>Crypto</span> Trading Strategies</h1>
                     </div>
                     <div class="banner-progress-wrap">
-                        <ul class="d-flex justify-content-between p-0 list-unstyled mx-5">
+                        <ul class="d-flex justify-content-between p-0 list-unstyled mx-md-5">
                             <li>Pre Sale</li>
                             <li>Soft Cap</li>
                             <li>Bonus</li>
@@ -101,7 +135,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-10 text-center mx-auto">
+                <div class="col-lg-10 text-center mx-auto">
                     <div class="banner_bottom">
                         <h2>ICO Will Start In..</h2>
                         <div id="countdown">
@@ -116,29 +150,936 @@
                 </div>
             </div>
         </div>
+        
+    <canvas class="particles" width="1071" height="969" style="width: 100%; height: 100%;"></canvas>
     </section>
     <!-- Banner End  -->
 
     <!-- Who We Are Start  -->
-    <section class="who-we-are">
+    <section class="who-we-are" id="about"> 
         <div class="container">
             <div class="row">
-                <div class="col-6">
-                    <img src="./images/about_img01.png" alt="" class="ing-fluid">
+                <div class="col-lg-6 text-center text-lg-end mb-5 mb-lg-0">
+                    <img src="./images/about_img01.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-6 align-self-center">
+                <div class="col-lg-6 align-self-center">
                     <div class="who-we-are-wrap">
-                        <h3>Who We Are</h3>
-                        <h2>The World’s 1st ICO Platform That Offers Rewards</h2>
-                        <p>The World’s <span>1st ICO</span> Platform That Offers Rewards and The platform helps investors to make easy to purchase and sell their tokens</p>
-                        <a href="#" class="btn">Purchase Tokens</a>
+                        <h3 class="small_head">Who We Are</h3>
+                        <h2>The World’s <span>1st ICO</span> Platform That Offers Rewards</h2>
+                        <p>The World’s 1st ICO Platform That Offers Rewards and The platform helps investors to make easy to purchase and sell their tokens</p>
+                        <a href="#" class="btn_cstm ">Purchase Tokens</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Who We Are End -->
 
+    <!-- Our Partner Start  -->
+    <section class="our_partner">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-8 mx-auto">
+                    <h3 class="small_head">OUR TOP PARTNER</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="brands">
+                        <ul class="d-flex flex-wrap list-unstyled justify-content-center">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/partner_img01.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/partner_img02.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/partner_img03.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/partner_img04.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/partner_img05.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/partner_img01.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/partner_img02.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/partner_img03.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/partner_img04.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/partner_img05.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Partner End  -->
+
+    <!-- Choose Us Start -->
+    <section class="choose_us">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h3 class="small_head">WHY CHOOSE US</h3>
+                    <h2 class="title1">Why Choose Our Bigtech 
+                        <br><span>Token</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="slider_outer">
+                <div class="slider_content">
+                    <div class="img_outer">
+                        <img src="./images/choose_icon04.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Security & control over money</h3>
+                        <p>Add new trending and rare artwork to your collection.</p>
+                    </div>
+                </div>
+                <div class="slider_content">
+                    <div class="img_outer">
+                        <img src="./images/choose_icon04.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Security & control over money</h3>
+                        <p>Add new trending and rare artwork to your collection.</p>
+                    </div>
+                </div>
+                <div class="slider_content">
+                    <div class="img_outer">
+                        <img src="./images/choose_icon04.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Security & control over money</h3>
+                        <p>Add new trending and rare artwork to your collection.</p>
+                    </div>
+                </div>
+                <div class="slider_content">
+                    <div class="img_outer">
+                        <img src="./images/choose_icon04.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Security & control over money</h3>
+                        <p>Add new trending and rare artwork to your collection.</p>
+                    </div>
+                </div>
+                <div class="slider_content">
+                    <div class="img_outer">
+                        <img src="./images/choose_icon04.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Security & control over money</h3>
+                        <p>Add new trending and rare artwork to your collection.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- Choose Us End -->
+
+    <!-- Chart Sec Start  -->
+    <section class="chart_sec">
+        <div class="container">
+            <div class="chart_wrap">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-10 mx-auto order-2 order-lg-1">
+                            <div class="left w-75">
+                            <ul class="nav nav-pills mb-5" id="pills-tab" role="tablist">
+                                <li class="nav-item mb-3 mb-xxl-0 pe-4 active" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">FUNDING ALLOCATION</button>
+                                </li>
+                                <li class="nav-item ps-xxl-4" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">TOKEN ALLOCATION</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                    <h2>1 CNL = 0.0863 BTC</h2>
+                                    <p>The World’s 1st ICO Platform That Offers Rewards and The platform helps investors to make easy to purchase and sell their tokens</p>
+                                    <a href="#">Buy Now</a>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                    <h2>2 CNL = 0.0263 BTC</h2>
+                                    <p>The World’s 1st ICO Platform That Offers Rewards and The platform helps investors to make easy to purchase and sell their tokens</p>
+                                    <a href="#">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-10 mx-auto order-1 order-lg-2 mb-5 mb-lg-0">
+                        <div class="right">
+                            <img src="./images/chart.png" alt="">
+                            <ul class="d-flex flex-wrap list-unstyled mb-0">
+                                <li>Contingency: 70%</li>
+                                <li>Business Development: 10%</li>
+                                <li>Investor: 30%</li>
+                                <li>Poland: 8%</li>
+                                <li>Legal & Regulation: 10%</li>
+                                <li>Czech Republic: 15%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Chart Sec End  -->
+    
+    <!-- Roadmap Start  -->
+    <section class="roadmap" id="roadmap">
+        <div class="cstm-container container">
+            <div class="roadmap_main">
+                <div class="row text-center mb-5">
+                    <div class="col-lg-8 mx-auto">
+                        <h3 class="small_head">OUR ROADMAP</h3>
+                        <h2 class="title1">Bigtech Strategy And
+                            <br>Project <span>Plan</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="roadmap_wrap">
+                    <div class="roadmap_item">
+                        <span class="roadmap_title">MID of Q1 2021</span>
+                        <div class="roadmap_content">
+                            <span class="dot"></span>
+                            <h4>Concept</h4>
+                            <span>EVM support for parthians</span>
+                            <span>SubQuery Academy</span>
+                            <span>Proof of indexing</span>
+                        </div>
+                    </div>
+                    <div class="roadmap_item">
+                        <span class="roadmap_title">MID of Q1 2021</span>
+                        <div class="roadmap_content">
+                            <span class="dot"></span>
+                            <h4>Concept</h4>
+                            <span>EVM support for parthians</span>
+                            <span>SubQuery Academy</span>
+                            <span>Proof of indexing</span>
+                        </div>
+                    </div>
+                    <div class="roadmap_item">
+                        <span class="roadmap_title">MID of Q1 2021</span>
+                        <div class="roadmap_content">
+                            <span class="dot"></span>
+                            <h4>Concept</h4>
+                            <span>EVM support for parthians</span>
+                            <span>SubQuery Academy</span>
+                            <span>Proof of indexing</span>
+                        </div>
+                    </div>
+                    <div class="roadmap_item">
+                        <span class="roadmap_title">MID of Q1 2021</span>
+                        <div class="roadmap_content">
+                            <span class="dot"></span>
+                            <h4>Concept</h4>
+                            <span>EVM support for parthians</span>
+                            <span>SubQuery Academy</span>
+                            <span>Proof of indexing</span>
+                        </div>
+                    </div>
+                    <div class="roadmap_item">
+                        <span class="roadmap_title">MID of Q1 2021</span>
+                        <div class="roadmap_content">
+                            <span class="dot"></span>
+                            <h4>Concept</h4>
+                            <span>EVM support for parthians</span>
+                            <span>SubQuery Academy</span>
+                            <span>Proof of indexing</span>
+                        </div>
+                    </div>
+                    <div class="roadmap_item">
+                        <span class="roadmap_title">MID of Q1 2021</span>
+                        <div class="roadmap_content">
+                            <span class="dot"></span>
+                            <h4>Concept</h4>
+                            <span>EVM support for parthians</span>
+                            <span>SubQuery Academy</span>
+                            <span>Proof of indexing</span>
+                        </div>
+                    </div>
+                    <div class="roadmap_item">
+                        <span class="roadmap_title">MID of Q1 2021</span>
+                        <div class="roadmap_content">
+                            <span class="dot"></span>
+                            <h4>Concept</h4>
+                            <span>EVM support for parthians</span>
+                            <span>SubQuery Academy</span>
+                            <span>Proof of indexing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="whitepaper">
+                <div class="row">
+                    <div class="col-md-7 order-2 order-md-0 mt-5 mt-md-0">
+                        <div class="right text-center">
+                            <img src="./images/document_img.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="sec_title my-4 my-md-5">
+                            <h3 class="small_head">WHITEPAPER</h3>
+                            <h2 class="title1">Read Bigtech
+                                <br class="d-none d-md-block"><span>Documents</span>
+                            </h2>
+                        </div>
+                        <ul class="mb-4 mb-md-5">
+                            <li>White Paper</li>
+                            <li>Privacy & Policy</li>
+                            <li>Terms Of Coin Sale</li>
+                            <li>One Pager</li>
+                        </ul>
+                        <a href="#" class="btn_cstm">Download DOC</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Roadmap End  -->
+
+    <!-- Team Start  -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 mx-auto text-center">
+                    <div class="sec_title">
+                        <h3 class="small_head">OUR TEAM</h3>
+                        <h2 class="title1">The Leadership
+                            <br class="d-none d-md-block"><span>Team</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-none d-md-flex">
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="team_item text-center">
+                        <div class="team_img">
+                            <img src="./images/team_img01.png" alt="">
+                        </div>
+                        <div class="team_content">
+                            <h3 class="title">Cameron Williamson</h3>
+                            <span>Founder & CO</span>
+                            <div class="team_links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="team_item text-center">
+                        <div class="team_img">
+                            <img src="./images/team_img02.png" alt="">
+                        </div>
+                        <div class="team_content">
+                            <h3 class="title">Eleanor Pena</h3>
+                            <span>Head of Design</span>
+                            <div class="team_links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="team_item text-center">
+                        <div class="team_img">
+                            <img src="./images/team_img03.png" alt="">
+                        </div>
+                        <div class="team_content">
+                            <h3 class="title">Bessie Cooper</h3>
+                            <span>Vp People</span>
+                            <div class="team_links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="team_item text-center">
+                        <div class="team_img">
+                            <img src="./images/team_img05.png" alt="">
+                        </div>
+                        <div class="team_content">
+                            <h3 class="title">Jacob Jones</h3>
+                            <span>Marketer</span>
+                            <div class="team_links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="team_item text-center">
+                        <div class="team_img">
+                            <img src="./images/team_img01.png" alt="">
+                        </div>
+                        <div class="team_content">
+                            <h3 class="title">Cameron Williamson</h3>
+                            <span>Founder & CO</span>
+                            <div class="team_links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="team_item text-center">
+                        <div class="team_img">
+                            <img src="./images/team_img02.png" alt="">
+                        </div>
+                        <div class="team_content">
+                            <h3 class="title">Eleanor Pena</h3>
+                            <span>Head of Design</span>
+                            <div class="team_links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="team_item text-center">
+                        <div class="team_img">
+                            <img src="./images/team_img03.png" alt="">
+                        </div>
+                        <div class="team_content">
+                            <h3 class="title">Bessie Cooper</h3>
+                            <span>Vp People</span>
+                            <div class="team_links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="team_item text-center">
+                        <div class="team_img">
+                            <img src="./images/team_img05.png" alt="">
+                        </div>
+                        <div class="team_content">
+                            <h3 class="title">Jacob Jones</h3>
+                            <span>Marketer</span>
+                            <div class="team_links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-slider d-md-none">
+                <div>
+                    <div class="team_item text-center">
+                        <div class="team_img">
+                            <img src="./images/team_img01.png" alt="">
+                        </div>
+                        <div class="team_content">
+                            <h3 class="title">Cameron Williamson</h3>
+                            <span>Founder & CO</span>
+                            <div class="team_links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="team_item text-center">
+                        <div class="team_img">
+                            <img src="./images/team_img02.png" alt="">
+                        </div>
+                        <div class="team_content">
+                            <h3 class="title">Eleanor Pena</h3>
+                            <span>Head of Design</span>
+                            <div class="team_links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="team_item text-center">
+                        <div class="team_img">
+                            <img src="./images/team_img03.png" alt="">
+                        </div>
+                        <div class="team_content">
+                            <h3 class="title">Bessie Cooper</h3>
+                            <span>Vp People</span>
+                            <div class="team_links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="team_item text-center">
+                        <div class="team_img">
+                            <img src="./images/team_img05.png" alt="">
+                        </div>
+                        <div class="team_content">
+                            <h3 class="title">Jacob Jones</h3>
+                            <span>Marketer</span>
+                            <div class="team_links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="team_item text-center">
+                        <div class="team_img">
+                            <img src="./images/team_img01.png" alt="">
+                        </div>
+                        <div class="team_content">
+                            <h3 class="title">Cameron Williamson</h3>
+                            <span>Founder & CO</span>
+                            <div class="team_links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="team_item text-center">
+                        <div class="team_img">
+                            <img src="./images/team_img02.png" alt="">
+                        </div>
+                        <div class="team_content">
+                            <h3 class="title">Eleanor Pena</h3>
+                            <span>Head of Design</span>
+                            <div class="team_links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="team_item text-center">
+                        <div class="team_img">
+                            <img src="./images/team_img03.png" alt="">
+                        </div>
+                        <div class="team_content">
+                            <h3 class="title">Bessie Cooper</h3>
+                            <span>Vp People</span>
+                            <div class="team_links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="team_item text-center">
+                        <div class="team_img">
+                            <img src="./images/team_img05.png" alt="">
+                        </div>
+                        <div class="team_content">
+                            <h3 class="title">Jacob Jones</h3>
+                            <span>Marketer</span>
+                            <div class="team_links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team End  -->
+
+    <!-- Contact Start  -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 mx-auto text-center">
+                    <div class="sec_title">
+                        <h3 class="small_head">CONTACT</h3>
+                        <h2 class="title1">
+                            <span>Contact </span>ICO Crypto
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="contact_wrap pb-5">
+                <div class="row">
+                    <div class="col-md-4 col-6">
+                        <div class="contact_item line_img position-relative text-center mb-4">
+                            <div class="icon">
+                                <span></span>
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    company@gmail.com
+                                    <br>
+                                    infoweb@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6 position-relative text-center mb-4">
+                        <div class="contact_item line_img">
+                            <div class="icon">
+                                <span></span>
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    +84 0977425031
+                                    <br>
+                                    +998 765 775 34
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6 position-relative text-center mb-4">
+                        <div class="contact_item">
+                            <div class="icon">
+                                <span></span>
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    State/province/area:
+                                    <br>
+                                    Georgia 198
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact_form">
+                <form class="form">
+                    <div class="row mb-4 mb-md-5 gy-4">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Enter your Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                    </div>
+                    <div class="form_msg mb-4 mb-md-5">
+                        <textarea name="your-massege" class="form-control" cols="40" rows="10" placeholder="Enter your message"></textarea>
+                    </div>
+                    <div class="form_btn text-center">
+                        <button type="submit" class="btn_cstm">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Contact End  -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="top_btn position-relative">
+                <button class="mx-auto d-flex justify-content-center align-items-center rounded-circle" id="top_btn" data-bs-target="#">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+            <div class="footer_wrap py-5">
+                <div class="row gy-4">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="about">
+                            <a href="#"><img src="./images/logo.png" alt=""></a>
+                            <p class="my-4">A new way to make the payments easy, reliable and 100% secure. claritatem itamconse quat. Exerci tationulla</p>
+                            <ul class="social_links d-flex p-0 list-unstyled">
+                                <li>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-skype"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="links ms-md-5 ps-md-4">
+                            <h4>USEFUL LINKS</h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">Contact us</a>
+                                </li>
+                                <li>
+                                    <a href="#">How it Works</a>
+                                </li>
+                                <li>
+                                    <a href="#">Create</a>
+                                </li>
+                                <li>
+                                    <a href="#">Explore</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms & Services</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-6">
+                        <div class="links">
+                            <h4>COMMUNITY</h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">Help Center</a>
+                                </li>
+                                <li>
+                                    <a href="#">Partners</a>
+                                </li>
+                                <li>
+                                    <a href="#">Suggestions</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Newsletters</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-5 col-md-6">
+                        <div class="subscribe">
+                            <h4>SUBSCRIBE NEWSLETTER</h4>
+                            <p>Exerci tation ullamcorper suscipit lobortis nisl aliquip ex ea commodo</p>
+                            <div class="footer_form">
+                                <form action="get" class="position-relative">
+                                    <input type="email" placeholder="Info@gmail.com" required>
+                                    <button type="submit">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom py-3 border-top border-white border-opacity-25">
+                <div class="row gy-2 text-center text-lg-start">
+                    <div class="col-lg-6">
+                        <p>Copyright © 2022 Bigtech All Rights Reserved.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="d-flex footer-menu list-unstyled m-0 justify-content-center justify-content-lg-end">
+                            <li> 
+                                <a href="#">Terms and conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Login / Signup</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/particles.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/custom.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.slider_outer').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            arrows: false,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [
+                {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    arrows: false,
+                    dots: true
+                }
+                },
+                {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    dots: true
+                }
+                },
+                {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true
+                }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+          });
+          $('.team-slider').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            arrows: false,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: true
+                }
+                },
+                {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true
+                }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+          });
+        });
+        window.onload = function() {
+            Particles.init({
+            selector: '.particles',
+            color: '#75A5B7',
+            maxParticles: 150,
+            speed: 1,
+            connectParticles: false,
+            responsive: [
+                {
+                breakpoint: 768,
+                options: {
+                    maxParticles: 80
+                }
+                }, {
+                breakpoint: 375,
+                options: {
+                    maxParticles: 50
+                }
+                }
+            ]
+            });
+        };
+        $(document).ready(function(){
+        $('.nav_btn').click(function(){
+            $('.side-menu').toggleClass('menu-show')
+        })
+        $('.backdrop').click(function(){
+            $('.side-menu').removeClass('menu-show')
+        })
+        $('.close_btn').click(function(){
+            $('.side-menu').removeClass('menu-show')
+        })
+        $('.nav-item').click(function(){
+            $('.side-menu').removeClass('menu-show')
+        })
+        $(window).scroll(function(){
+            if ($(document).scrollTop() > 500){
+                $('.scroll_top').css("display","flex")
+            } else {
+                $('.scroll_top').css("display","none")
+            }
+        })
+    })
+      </script>
 </body>
 </html>

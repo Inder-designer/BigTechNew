@@ -42,7 +42,7 @@ navlinks.forEach(a=>{
         mm = String(today.getMonth() + 1).padStart(2, "0"),
         yyyy = today.getFullYear(),
         nextYear = yyyy + 1,
-        dayMonth = "01/1/",
+        dayMonth = "02/10/",
         birthday = dayMonth + yyyy;
     
     today = mm + "/" + dd + "/" + yyyy;
@@ -72,3 +72,33 @@ navlinks.forEach(a=>{
           //seconds
         }, 0)
     }());
+
+    var topbtn = $('#top_btn')
+
+    topbtn.on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({scrollTop:0}, '300');
+    });
+
+
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+          $('.side-menu').toggleClass('menu-show')
+      })
+      $('.backdrop').click(function(){
+          $('.side-menu').removeClass('menu-show')
+      })
+      $('.close_btn').click(function(){
+          $('.side-menu').removeClass('menu-show')
+      })
+      $('.nav-item').click(function(){
+          $('.side-menu').removeClass('menu-show')
+      })
+      $(window).scroll(function(){
+          if ($(document).scrollTop() > 500){
+              $('.scroll_top').css("display","flex")
+          } else {
+              $('.scroll_top').css("display","none")
+          }
+      })
+  })

@@ -1,19 +1,235 @@
-@media screen and (max-width: 1199.98px) {
-    .header .navbar-nav .nav-link{
-        padding: 0;
+@media screen and (min-width: 1600px)  {
+    .roadmap .roadmap_wrap{
+        overflow-x: hidden;
     }
+}
+@media screen and (min-width: 1400px) {
+    .cstm-container{
+        max-width: 1600px;
+    }
+    
+.header .navbar-nav .nav-item{
+    padding: 0px 25px;
+}
+}
+@media screen and (min-width: 1200px) {
+    .chart_sec .chart_wrap{
+        padding: 0 110px;
+    }
+}
+@media screen and (max-width: 1199.98px) {
+    .roadmap .roadmap_wrap{
+        overflow-y: hidden;
+    }
+    /* .header .navbar-nav .nav-link{
+        padding: 0;
+    } */
     .nav_right .navbar-nav .nav-item:not(:first-child){
         margin-left: 0;
     }
     .header .navbar-brand img {
-        width: 80px;
+        width: 100px;
+    }
+    .chart_sec .chart_wrap h2{
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+    .chart_sec .chart_wrap p{
+        margin-bottom: 55px;
+    }
+    .our_partner ul li{
+        width: 25%;
+    }
+    .who-we-are .who-we-are-wrap h2{
+        font-size: 36px;
+    }
+    .who-we-are .who-we-are-wrap p{
+        width: 85%;
+    }
+    .who-we-are .who-we-are-wrap{
+        margin-left: 30px;
+    }
+    .banner .banner-heading h1{
+        font-size: 45px;
+    }
+    .banner-progress-wrap{
+        margin: 030px 60px;
     }
 }
 @media screen and (max-width: 991.98px){
+    .header .navbar-nav .nav-item{
+        padding: 14px 15px;
+        width: 100%;
+    }
     .nav_right .navbar-nav .nav-item:not(:first-child){
         padding-left: 0;
     }
     .nav_right .navbar-nav .nav-item:not(:first-child)::before{
         content: none;
+    }
+    .nav_right .navbar-nav .nav-link{
+        font-size: 12px;
+        padding: 10px 20px !important;
+    }
+    .chart_sec .chart_wrap .left{
+        width: 100% !important ;
+    }
+    .chart_sec .chart_wrap a{
+        padding: 15px 40px;
+    }
+    .our_partner ul li{
+        width: 33.33%;
+    }
+    .who-we-are .who-we-are-wrap p{
+        width: 100%;
+    }
+    .banner-progress-wrap{
+        margin: 0px 0 40px;
+    }
+    .banner .banner_img .img_1{
+        max-width: 120px;
+        top: 10%;
+        left: 5%;
+        animation: img1 3s infinite linear;
+    }
+    @keyframes img1 {
+        50% {left: 0%;}
+          100% {left: 5%;}
+    }
+    .title1{
+        font-size: 38px;
+    }
+    .team .team_item .team_content .title{
+        font-size: 19px;
+    }
+    .contact .contact_item .content p {
+        font-size: 16px;
+    }
+    .contact .contact_item .icon span {
+        width: 63px;
+        height: 63px;
+    }
+    .contact .contact_wrap .contact_item .icon {
+        width: 87px;
+        height: 87px;
+        font-size: 18px;
+    }
+    .contact .contact_wrap .line_img::before {
+        width: 100px;
+        top: 42px;
+        right: -60px;
+    }
+    .contact .contact_form {
+        padding: 60px 40px;
+    }
+}
+@media screen and (max-width: 767.98px){
+    .chart_sec .chart_wrap .right{
+        padding: 50px 30px;
+    }
+    .chart_sec .chart_wrap h2{
+        font-size: 40px;
+    }
+    .our_partner ul li{
+        width: 50%;
+    }
+    .banner_bottom li {
+        min-width: 115px;
+        min-height: 100px;
+        margin: 16px 8px 0;
+    }
+    .banner .banner-heading h1{
+        font-size: 30px;
+    }
+    .title1{
+        font-size: 34px;
+    }
+    .title1 br{
+        display: none;
+    }
+    .contact .contact_wrap .line_img::before{
+        content: none;
+    }
+    .footer .footer_wrap .about p {
+        font-size: 12px;
+        max-width: 100%;
+    }
+    .footer .footer_wrap .links ul li {
+        margin: 0 0 12px;
+    }
+    .footer .footer_wrap .subscribe p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .footer .footer_wrap h4 {
+        margin: 0 0 14px;
+    }
+}
+@media screen and (max-width: 575.98px){
+    .who-we-are,.our_partner,.choose_us, .roadmap .roadmap_main,.whitepaper,.team,.contact,.footer {
+        padding: 100px 0 0;
+    }
+    .chart_sec .chart_wrap .right li{
+        width: 100%;
+    }
+    .chart_sec .chart_wrap .right{
+        padding: 30px 30px;
+    }
+    .our_partner ul li{
+        width: 100%;
+    }
+    .who-we-are .who-we-are-wrap h2{
+        font-size: 24px;
+        margin-bottom: 20px;    
+    }
+    .who-we-are .who-we-are-wrap p{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .banner-progress-wrap .title{
+        font-size: 12px;
+    }
+    .banner{
+        padding: 120px 0 30px;
+    }
+    .banner .banner_img .img_1{
+        max-width: 100px;
+        top: 10%;
+    }
+    .title1{
+        font-size: 26px;
+    }
+    .small_head{
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    .contact .contact_form {
+        padding: 40px 20px;
+    }    
+    .contact .contact_form input, .contact .contact_form textarea {
+        font-size: 14px;
+        line-height: 24px;
+        padding: 12px 16px;
+    }
+    .btn_cstm{
+        font-size: 12px;
+        padding: 18px 30px;
+    }
+    .footer .footer_bottom p{
+        font-size: 12px;
+    }
+    .footer-menu li {
+        padding: 0 15px;
+    }
+    .footer-menu li a {
+        font-size: 12px;
+    }
+    .footer_wrap .subscribe .footer_form input, .subscribe .footer_form button{
+        height: 56px;
+    }
+}
+@media screen and (max-width: 450px){
+    .contact .contact_item .content p {
+        font-size: 12px;
     }
 }
