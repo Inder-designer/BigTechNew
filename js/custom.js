@@ -1,33 +1,149 @@
+console.log('external');
+
+  var today = new Date();
+  var yesterday = new Date(today);
+  let data =  yesterday.setDate(today.getDate() - 1)
+  let newData = new Date(data)
+  console.log(newData,"newdata")
+
+  console.log( yesterday.setDate(today.getDate() - 1))
+
+  
+$(document).ready(function () {
+        $(".slider_outer").slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          arrows: false,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                arrows: false,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+              },
+            },
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ],
+        });
+        $(".team-slider").slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          arrows: false,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+              },
+            },
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ],
+        });
+      });
+      window.onload = function () {
+        Particles.init({
+          selector: ".particles",
+          color: "#75A5B7",
+          maxParticles: 150,
+          speed: 1,
+          connectParticles: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              options: {
+                maxParticles: 80,
+              },
+            },
+            {
+              breakpoint: 375,
+              options: {
+                maxParticles: 50,
+              },
+            },
+          ],
+        });
+      };
+      $(document).ready(function () {
+        $(".nav_btn").click(function () {
+          $(".side-menu").toggleClass("menu-show");
+        });
+        $(".backdrop").click(function () {
+          $(".side-menu").removeClass("menu-show");
+        });
+        $(".close_btn").click(function () {
+          $(".side-menu").removeClass("menu-show");
+        });
+        $(".nav-item").click(function () {
+          $(".side-menu").removeClass("menu-show");
+        });
+        $(window).scroll(function(){
+          if ($(document).scrollTop() > 450){
+            $('.blog-header').addClass('sticky_header')
+          } else{
+            $('.blog-header').removeClass('sticky_header')
+          }
+        })
+      });
+      document .getElementById("myForm").addEventListener("submit", function (event) {
+          event.preventDefault();
+          $.ajax({
+            url: "https://api.apispreadsheets.com/data/IYpnrJf4SLCZZXkC/",
+            type: "post",
+            data: $("#myForm").serializeArray(),
+            success: function () {
+              alert("Message Submit :)");
+            },
+            error: function () {
+              alert("There was an error :(");
+            },
+          });
+          event.target.reset();
+        });
 
 let navlinks = document.querySelectorAll(".nav-item");
 navlinks.forEach(a=>{
   a.addEventListener('click',function(){
     navlinks.forEach(a=>a.classList.remove('active'));
-
-    const modalToogle = document.querySelector(".offcanvas")
-    document.querySelector(".offcanvas").classList.toggle("show")
-    document.querySelector(".offcanvas-backdrop")?.remove()
-    this.classList.add('active')
-    modalToogle.removeAttribute("aria-modal")
-    modalToogle.removeAttribute("role")
   })})
-
-
-
-
-
-
-  document.getElementById("tgl_btn").addEventListener('click', () => {
-    const modalToogle = document.querySelector(".offcanvas")
-    document.querySelector(".offcanvas").classList.toggle("show")
-    document.querySelector(".offcanvas-backdrop").remove()
-  })
-
-  document.querySelector('.btn-close').addEventListener('click', () => {
-    const modalToogle = document.querySelector(".offcanvas")
-    document.querySelector(".offcanvas").classList.toggle("show")
-    document.querySelector(".offcanvas-backdrop").remove()
-  })
 
   (function () {
     const second = 1000,
@@ -46,9 +162,7 @@ navlinks.forEach(a=>{
         birthday = dayMonth + yyyy;
     
     today = mm + "/" + dd + "/" + yyyy;
-    if (today > birthday) {
-      birthday = dayMonth + nextYear;
-    }
+    
     //end
     
     const countDown = new Date(birthday).getTime(),
@@ -63,42 +177,8 @@ navlinks.forEach(a=>{
             document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
   
           //do something later when date is reached
-          if (distance < 0) {
-            document.getElementById("headline").innerText = "It's my birthday!";
-            document.getElementById("countdown").style.display = "none";
-            document.getElementById("content").style.display = "block";
-            clearInterval(x);
-          }
+         
           //seconds
         }, 0)
     }());
-
-    var topbtn = $('#top_btn')
-
-    topbtn.on('click', function(e) {
-      e.preventDefault();
-      $('html, body').animate({scrollTop:0}, '300');
-    });
-
-
-    $(document).ready(function(){
-      $('.nav_btn').click(function(){
-          $('.side-menu').toggleClass('menu-show')
-      })
-      $('.backdrop').click(function(){
-          $('.side-menu').removeClass('menu-show')
-      })
-      $('.close_btn').click(function(){
-          $('.side-menu').removeClass('menu-show')
-      })
-      $('.nav-item').click(function(){
-          $('.side-menu').removeClass('menu-show')
-      })
-      $(window).scroll(function(){
-          if ($(document).scrollTop() > 500){
-              $('.scroll_top').css("display","flex")
-          } else {
-              $('.scroll_top').css("display","none")
-          }
-      })
-  })
+      

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Poppins:wght@500;600;700&family=Outfit:wght@300;400;600&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <title>Document</title>
+  </head>
+  <body class="blogpage">
+    <header class="header w-100 blog-header" id="blog-header">
+      <div class="container cstm-container">
+        <nav class="navbar navbar-expand-lg justify-content-between py-0">
+          <a class="navbar-brand" href="./index.html"
+            ><img src="./images/logo.png" alt="Aurres" class="img-fluid" />
+          </a>
+          <div class="nav-menu d-none d-lg-block">
+            <ul
+              class="navbar-nav justify-content-center mb-2 mb-lg-0 align-items-center"
+              id="nav_menu"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#roadmap">Roadmap</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Team</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="/blog.html">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link contact-us" href="#contact">Contact Us</a>
+              </li>
+              <li class="nav-item d-block d-md-none">
+                <a href="#" class="nav-link">Buy Now</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav_right d-flex">
+            <ul class="navbar-nav mb-0 align-items-center">
+              <li class="nav-item header-lang d-none d-xl-block">
+                <span class="selected_lang">ENG</span>
+                <ul class="lang-list">
+                  <li><a href="#">IND</a></li>
+                  <li><a href="#">SPA</a></li>
+                  <li><a href="#">GRE</a></li>
+                  <li><a href="#">CIN</a></li>
+                </ul>
+              </li>
+              <li class="nav-item d-none d-md-block">
+                <a href="#" class="nav-link btn">Buy Now</a>
+              </li>
+            </ul>
+            <button class="nav_btn d-block d-lg-none ms-3">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Side Menu  -->
+    <div class="side-menu">
+      <div class="backdrop">Tap to Close</div>
+      <div class="body">
+        <div class="side-logo px-4">
+          <a class="navbar-brand" href="./index.html"
+            ><img
+              src="./images/logo.png"
+              alt="Aurres"
+              class="img-fluid"
+              width="80"
+            />
+          </a>
+          <button class="close_btn">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <ul class="side-nav">
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#roadmap">Roadmap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/blog.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link contact-us" href="#contact">Contact Us</a>
+          </li>
+          <li class="nav-item d-block d-md-none">
+            <a href="#" class="nav-link">Buy Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Side Menu End -->
+
+    <!-- Breadcrumb Start  -->
+    <section class="breadcrumb_sec">
+        <div class="container">
+            <div class="breadcrumb_wrap text-center">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="title">Blog</h2>
+                        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="/index.html">Bigtech</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                            </ol>
+                          </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>  
+    <!-- </section>Breadcrumb End  -->
+
+    <!-- Blog Area Start  -->
+    <section class="blog_area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+
+            <!-- Post Sec Start -->
+            <div class="blogpost_wrap">
+              <article class="post_item">
+                <div class="post_thumb mb-4">
+                  <a href="#">
+                    <img src="./images/blog_img01.jpg" alt="Blog 1" class="img-fluid rounded-4" width="">
+                  </a>
+                </div>
+                <div class="post_content">
+                  <div class="post_meta mb-4">
+                    <ul class="d-flex list-unstyled p-0 ">
+                      <li class="user">
+                        <i class="fa-regular fa-user"></i>
+                        <a href="#">Admin</a>
+                      </li>
+                      <li class="post_date">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <Span>October 7, 2023</Span>
+                      </li>
+                      <li class="post_comment">
+                        <i class="fa-regular fa-comments"></i>
+                        <a href="#">3 Comments</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <h2 class="title">
+                    <a href="#">New Trends In UI/UX Design World Of Crypto Integration Of This Year</a>
+                  </h2>
+                  <p class="post_text">
+                    Laboratories used for scientific research take many forms because of the differing requirements of specialists in the various fields of science and engineering. A physics laboratory Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, aperiam ipsquae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim […]
+                  </p>
+                  <div class="post_btn">
+                    <a href="#" class="btn_cstm">Read More <i class="fa-solid fa-arrow-right ms-3"></i> </a>
+                  </div>
+                </div>
+              </article>
+              <article class="post_item">
+                <div class="post_thumb mb-4">
+                  <a href="#">
+                    <img src="./images/blog_img02.jpg" alt="Blog 1" class="img-fluid rounded-4" width="">
+                  </a>
+                </div>
+                <div class="post_content">
+                  <div class="post_meta mb-4">
+                    <ul class="d-flex list-unstyled p-0 ">
+                      <li class="user">
+                        <i class="fa-regular fa-user"></i>
+                        <a href="#">Admin</a>
+                      </li>
+                      <li class="post_date">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <Span>October 7, 2023</Span>
+                      </li>
+                      <li class="post_comment">
+                        <i class="fa-regular fa-comments"></i>
+                        <a href="#">No Comments</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <h2 class="title">
+                    <a href="#">That Time We Burned Down Players’ Houses In Ultima Online</a>
+                  </h2>
+                  <p class="post_text">
+                    Laboratories used for scientific research take many forms because of the differing requirements of specialists in the various fields of science and engineering. A physics laboratory Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, aperiam ipsquae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim […]
+                  </p>
+                  <div class="post_btn">
+                    <a href="#" class="btn_cstm">Read More <i class="fa-solid fa-arrow-right ms-3"></i> </a>
+                  </div>
+                </div>
+              </article>
+              <article class="post_item">
+                <div class="post_thumb mb-4">
+                  <a href="#">
+                    <img src="./images/blog_img03.jpg" alt="Blog 1" class="img-fluid rounded-4" width="">
+                  </a>
+                </div>
+                <div class="post_content">
+                  <div class="post_meta mb-4">
+                    <ul class="d-flex list-unstyled p-0 ">
+                      <li class="user">
+                        <i class="fa-regular fa-user"></i>
+                        <a href="#">Admin</a>
+                      </li>
+                      <li class="post_date">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <Span>October 7, 2023</Span>
+                      </li>
+                      <li class="post_comment">
+                        <i class="fa-regular fa-comments"></i>
+                        <a href="#">Comments</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <h2 class="title">
+                    <a href="#">Why Your Next ‘Yes’ Hire Might Come From Someone Who Just Said</a>
+                  </h2>
+                  <p class="post_text">
+                    Laboratories used for scientific research take many forms because of the differing requirements of specialists in the various fields of science and engineering. A physics laboratory Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, aperiam ipsquae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim […]
+                  </p>
+                  <div class="post_btn">
+                    <a href="#" class="btn_cstm">Read More <i class="fa-solid fa-arrow-right ms-3"></i> </a>
+                  </div>
+                </div>
+              </article>
+              <!-- Post Sec End -->
+  
+              <!-- Pagignation  -->
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <!-- <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li> -->
+                  <li class="page-item current"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <i class="fa-solid fa-angles-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- Pagignation End-->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-7 mx-auto">
+            <!-- Aside Start -->
+            <aside class="blog_sidebar ps-xl-4">
+
+              <!-- Search Widget Start -->
+              <div class="blog_widget widget-search">
+                <h3 class="bw_title">Search Here</h3>
+                <div class="search_form position-relative">
+                  <form action="#">
+                    <input type="text" placeholder="Search">
+                    <button type="submit">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+
+              <!-- Catagories Widget Start -->
+              <div class="blog_widget widget-catagories">
+                <h3 class="bw_title">Catagories</h3>
+                <ul class="list-unstyled p-0">
+                  <li>
+                    <a href="#">Catagories-1</a>
+                    <span>2</span>
+                  </li>
+                  <li>
+                    <a href="#">Catagories-2</a>
+                    <span>4</span>
+                  </li>
+                  <li>
+                    <a href="#">Catagories-3</a>
+                    <span>2</span>
+                  </li>
+                  <li>
+                    <a href="#">Catagories-4</a>
+                    <span>2</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Recent Post Widget Start -->
+              <div class="blog_widget widget-recent-post">
+                <h3 class="bw_title">Search Here</h3>
+                <div class="rp_wrap">
+                  <div class="rp_item d-flex mb-3 align-items-center">
+                    <div class="rp_thumb">
+                      <a href="#"><img src="./images/blog_img01.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="rp_content">
+                      <span class="rp_date">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        October 7, 2023
+                      </span>
+                      <h4 class="rp_title">New Trends In UI/UX Design ...</h4>
+                    </div>
+                  </div>
+                  <div class="rp_item d-flex mb-3 align-items-center">
+                    <div class="rp_thumb">
+                      <a href="#"><img src="./images/blog_img01.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="rp_content">
+                      <span class="rp_date">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        October 7, 2023
+                      </span>
+                      <h4 class="rp_title">That Time We Burned Down ...</h4>
+                    </div>
+                  </div>
+                  <div class="rp_item d-flex mb-3 align-items-center">
+                    <div class="rp_thumb">
+                      <a href="#"><img src="./images/blog_img01.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="rp_content">
+                      <span class="rp_date">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        October 7, 2023
+                      </span>
+                      <h4 class="rp_title">Why Your Next ‘Yes’ Hire ...</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+            <!-- Aside End -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Start  -->
+    <footer class="footer">
+        <div class="container">
+          <div class="top_btn position-relative">
+            <button
+              class="mx-auto d-flex justify-content-center align-items-center rounded-circle"
+              id="top_btn"
+              data-bs-target="#"
+            >
+              <i class="fas fa-arrow-up"></i>
+            </button>
+          </div>
+          <div class="footer_wrap py-5">
+            <div class="row gy-4">
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="about">
+                  <a href="#"><img src="./images/logo.png" alt="" /></a>
+                  <p class="my-4">
+                    A new way to make the payments easy, reliable and 100% secure.
+                    claritatem itamconse quat. Exerci tationulla
+                  </p>
+                  <ul class="social_links d-flex p-0 list-unstyled">
+                    <li>
+                      <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-skype"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="links ms-md-5 ps-md-4">
+                  <h4>USEFUL LINKS</h4>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#">Contact us</a>
+                    </li>
+                    <li>
+                      <a href="#">How it Works</a>
+                    </li>
+                    <li>
+                      <a href="#">Create</a>
+                    </li>
+                    <li>
+                      <a href="#">Explore</a>
+                    </li>
+                    <li>
+                      <a href="#">Terms & Services</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-sm-6">
+                <div class="links">
+                  <h4>COMMUNITY</h4>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#">Help Center</a>
+                    </li>
+                    <li>
+                      <a href="#">Partners</a>
+                    </li>
+                    <li>
+                      <a href="#">Suggestions</a>
+                    </li>
+                    <li>
+                      <a href="#">Blog</a>
+                    </li>
+                    <li>
+                      <a href="#">Newsletters</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-5 col-md-6">
+                <div class="subscribe">
+                  <h4>SUBSCRIBE NEWSLETTER</h4>
+                  <p>
+                    Exerci tation ullamcorper suscipit lobortis nisl aliquip ex ea
+                    commodo
+                  </p>
+                  <div class="footer_form">
+                    <form action="get" class="position-relative">
+                      <input type="email" placeholder="Info@gmail.com" required />
+                      <button type="submit">
+                        <i class="fas fa-paper-plane"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="footer_bottom py-3 border-top border-white border-opacity-25"
+          >
+            <div class="row gy-2 text-center text-lg-start">
+              <div class="col-lg-6">
+                <p>Copyright © 2022 Bigtech All Rights Reserved.</p>
+              </div>
+              <div class="col-lg-6">
+                <ul
+                  class="d-flex footer-menu list-unstyled m-0 justify-content-center justify-content-lg-end"
+                >
+                  <li>
+                    <a href="#">Terms and conditions</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy policy</a>
+                  </li>
+                  <li>
+                    <a href="#">Login / Signup</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!-- Footer End  -->
+  
+      <script
+        type="text/javascript"
+        src="//code.jquery.com/jquery-1.11.0.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      ></script>
+      <script src="/js/bootstrap.min.js"></script>
+      <script src="./js/custom.js"></script>
+    </body>
+  </html>
+  

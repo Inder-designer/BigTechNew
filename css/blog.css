@@ -1,0 +1,282 @@
+a{
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease-out 0s;
+}
+.blog-header{
+    padding: 40px 0;
+    background: transparent;
+    border: none;
+    top: 0px;
+    position: absolute;
+    transition: all .3s;
+}
+.sticky_header{
+    position: fixed;
+    background-color: #030B15;
+    padding: 0;
+    animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+@keyframes fadeInDown{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.breadcrumb_sec{
+    background-image: url(../images/breadcrumb-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-color: #030b15;
+    padding: 235px 0 150px;
+}
+.breadcrumb_sec::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-image: url(../images/breadcrumb_shape.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 39px;
+}
+.breadcrumb_wrap .title{
+    font-size: 65px;
+    margin-bottom: 30px;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+    color: #fff;
+    font-weight: 600;
+}
+.breadcrumb_wrap .breadcrumb .breadcrumb-item{
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.breadcrumb_wrap .breadcrumb .breadcrumb-item a{
+    color: #fff;
+    text-decoration: none;
+}
+.breadcrumb_wrap .breadcrumb .breadcrumb-item.active, .breadcrumb_wrap .breadcrumb .breadcrumb-item a:hover {
+    color: #00c4f4 ;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+}
+
+
+/* Post area  */
+.blog_area{
+    padding: 130px 0;
+}
+.blog_area .blogpost_wrap .post_item{
+    margin-bottom: 60px;
+}
+.post_item .post_meta ul li{
+    color: #030B15;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 40px;
+    margin-top: 5px;
+}
+.post_meta ul li a,.post_meta ul li span{
+    color: #000;
+    text-decoration: none;
+}
+.post_meta ul li a:hover{
+    color: #564DCA;
+}
+.post_meta ul li i{
+    margin-right: 10px;
+    color: #564DCA;
+}
+.post_item .post_content .title{
+    color: #030B15;
+    letter-spacing: -0.02em;
+    font-size: 36px;
+    margin-bottom: 20px;
+    line-height: 1.27;
+    font-weight: 600;
+}
+.post_item .post_content .title a:hover{
+    color: #564DCA;
+}
+.post_item .post_content .post_text{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.75;
+    color: #727885;
+    margin-bottom: 25px;
+    font-family: 'Outfit', sans-serif;
+}
+.post_content .post_btn a{
+    background: #564DCA;
+    border-radius: 5px;
+    padding: 25px 42px;
+    border: none;
+    display: inline-block;
+    color: #fff;
+}
+.post_content .post_btn a::after{
+    content: none;
+}
+.post_content .post_btn a:hover{
+    background-color: #00c4f4;
+}
+.blogpost_wrap .pagination .page-item{
+    margin: 0 5px;
+}
+.blogpost_wrap .pagination .page-item a{
+    font-family: 'Outfit', sans-serif;
+    border: 2px solid #F2F5FA;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #8A879F;
+    display: block;
+    height: 45px;
+    width: 45px;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 42px;
+    transition: all .3s;
+}
+.blogpost_wrap .pagination .page-item.current a,.blogpost_wrap .pagination .page-item:hover a{
+    background: #564DCA;
+    font-size: 16px;
+    border-color: #564DCA;
+    color: #fff;
+}
+
+
+
+/* Aside Sec  */
+.blog_widget{
+    padding: 40px 30px;
+    margin: 0 0 40px;
+    border: 1px solid #F2F5FA;
+    box-shadow: 0px 12px 10px rgb(238 239 240 / 25%);
+}
+.blog_widget .bw_title{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #030B15;
+    letter-spacing: -0.02em;
+}
+.blog_widget .search_form input{
+    background: #F3F6FC;
+    border: 1px solid #F2F4F6;
+    color: #030A39;
+    width: 100%;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 19px 50px 19px 20px;
+    height: 60px;
+}
+.blog_widget .search_form input:focus{
+    outline: none;
+}
+.search_form button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    border: none;
+    background: transparent;
+    padding: 0;
+    font-size: 14px;
+    color: #030A39;
+}
+.widget-catagories ul li{
+    margin: 0 0 10px;
+    position: relative;
+}
+.widget-catagories ul li a{
+    text-transform: uppercase;
+    color: #727885;
+    font-weight: 600;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #F2F5FA;
+    background: #FFFFFF;
+    padding: 11px 18px;
+}
+.widget-catagories ul li a:hover{
+    color: #171717;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.056);
+}
+.widget-catagories ul li:hover span{
+    color: #171717;
+}
+.widget-catagories ul li span{
+    margin-left: auto;
+    position: absolute;
+    top: 0;
+    right: 18px;
+    line-height: 42px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #727885;
+    transition: all 0.3s ease-out 0s;
+}
+.widget-recent-post .rp_thumb{
+    width: 97px;
+    flex: 0 0 97px;
+    margin-right: 25px;
+}
+.widget-recent-post .rp_thumb img{
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.rp_wrap .rp_content .rp_date{
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #727885;
+    display: block;
+    margin-bottom: 5px;
+}
+.rp_wrap .rp_content .rp_date i, .rp_content .rp_title:hover{
+    color: #564DCA;
+}
+.rp_content .rp_title{
+    font-size: 15px;
+    color: #141515;
+    margin-bottom: 0;
+    line-height: 1.42;
+    font-weight: 600;
+}
+
+.footer{
+    position: relative;
+}
+.footer:before{
+    content: "";
+    background-image: url(../images/footer_shape.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 39px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
