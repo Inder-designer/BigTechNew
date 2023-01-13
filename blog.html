@@ -66,7 +66,7 @@
               <li class="nav-item header-lang d-none d-xl-block">
                 <span class="selected_lang">ENG</span>
                 <ul class="lang-list">
-                  <li><a href="#">IND</a></li>
+                  <li><a href="#" id="india">IND</a></li>
                   <li><a href="#">SPA</a></li>
                   <li><a href="#">GRE</a></li>
                   <li><a href="#">CIN</a></li>
@@ -153,19 +153,19 @@
     <section class="blog_area">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8">
+          <div class="col-lg-8 mb-5 mb-lg-0">
 
             <!-- Post Sec Start -->
             <div class="blogpost_wrap">
-              <article class="post_item">
-                <div class="post_thumb mb-4">
-                  <a href="#">
+              <article class="post_item post-4">
+                <div class="post_thumb mb-3 mb-sm-4">
+                  <a href="/blog-detail.html">
                     <img src="./images/blog_img01.jpg" alt="Blog 1" class="img-fluid rounded-4" width="">
                   </a>
                 </div>
                 <div class="post_content">
-                  <div class="post_meta mb-4">
-                    <ul class="d-flex list-unstyled p-0 ">
+                  <div class="post_meta mb-2 mb-sm-4">
+                    <ul class="d-flex list-unstyled p-0 flex-wrap">
                       <li class="user">
                         <i class="fa-regular fa-user"></i>
                         <a href="#">Admin</a>
@@ -176,30 +176,30 @@
                       </li>
                       <li class="post_comment">
                         <i class="fa-regular fa-comments"></i>
-                        <a href="#">3 Comments</a>
+                        <a href="/blog-detail.html">3 Comments</a>
                       </li>
                     </ul>
                   </div>
                   <h2 class="title">
-                    <a href="#">New Trends In UI/UX Design World Of Crypto Integration Of This Year</a>
+                    <a href="/blog-detail.html">New Trends In UI/UX Design World Of Crypto Integration Of This Year</a>
                   </h2>
                   <p class="post_text">
                     Laboratories used for scientific research take many forms because of the differing requirements of specialists in the various fields of science and engineering. A physics laboratory Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, aperiam ipsquae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim […]
                   </p>
                   <div class="post_btn">
-                    <a href="#" class="btn_cstm">Read More <i class="fa-solid fa-arrow-right ms-3"></i> </a>
+                    <a href="/blog-detail.html" class="btn_cstm">Read More <i class="fa-solid fa-arrow-right ms-3"></i> </a>
                   </div>
                 </div>
               </article>
               <article class="post_item">
-                <div class="post_thumb mb-4">
+                <div class="post_thumb mb-3 mb-sm-4">
                   <a href="#">
                     <img src="./images/blog_img02.jpg" alt="Blog 1" class="img-fluid rounded-4" width="">
                   </a>
                 </div>
                 <div class="post_content">
-                  <div class="post_meta mb-4">
-                    <ul class="d-flex list-unstyled p-0 ">
+                  <div class="post_meta mb-2 mb-sm-4">
+                    <ul class="d-flex list-unstyled p-0 flex-wrap">
                       <li class="user">
                         <i class="fa-regular fa-user"></i>
                         <a href="#">Admin</a>
@@ -226,14 +226,14 @@
                 </div>
               </article>
               <article class="post_item">
-                <div class="post_thumb mb-4">
+                <div class="post_thumb mb-3 mb-sm-4">
                   <a href="#">
                     <img src="./images/blog_img03.jpg" alt="Blog 1" class="img-fluid rounded-4" width="">
                   </a>
                 </div>
                 <div class="post_content">
-                  <div class="post_meta mb-4">
-                    <ul class="d-flex list-unstyled p-0 ">
+                  <div class="post_meta mb-2 mb-sm-4">
+                    <ul class="d-flex list-unstyled p-0 flex-wrap ">
                       <li class="user">
                         <i class="fa-regular fa-user"></i>
                         <a href="#">Admin</a>
@@ -259,25 +259,59 @@
                   </div>
                 </div>
               </article>
+              <article class="post_item">
+                <div class="post_thumb mb-3 mb-sm-4">
+                  <a href="#">
+                    <img src="./images/blog_img01.jpg" alt="Blog 1" class="img-fluid rounded-4" width="">
+                  </a>
+                </div>
+                <div class="post_content">
+                  <div class="post_meta mb-2 mb-sm-4">
+                    <ul class="d-flex list-unstyled p-0 flex-wrap">
+                      <li class="user">
+                        <i class="fa-regular fa-user"></i>
+                        <a href="#">Admin</a>
+                      </li>
+                      <li class="post_date">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <Span>October 7, 2023</Span>
+                      </li>
+                      <li class="post_comment">
+                        <i class="fa-regular fa-comments"></i>
+                        <a href="#">3 Comments</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <h2 class="title">
+                    <a href="#">New Trends In UI/UX Design World Of Crypto Integration Of This Year</a>
+                  </h2>
+                  <p class="post_text">
+                    Laboratories used for scientific research take many forms because of the differing requirements of specialists in the various fields of science and engineering. A physics laboratory Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, aperiam ipsquae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim […]
+                  </p>
+                  <div class="post_btn">
+                    <a href="#" class="btn_cstm">Read More <i class="fa-solid fa-arrow-right ms-3"></i> </a>
+                  </div>
+                </div>
+              </article>
               <!-- Post Sec End -->
   
               <!-- Pagignation  -->
               <nav aria-label="Page navigation example">
-                <ul class="pagination">
+                <ul class="pagination" id="pagin">
                   <!-- <li class="page-item">
                     <a class="page-link" href="#" aria-label="Previous">
                       <span aria-hidden="true">&laquo;</span>
                     </a>
                   </li> -->
-                  <li class="page-item current"><a class="page-link" href="#">1</a></li>
+                  <!-- <li class="page-item current"><a class="page-link" href="#">1</a></li>
                   <li class="page-item"><a class="page-link" href="#">2</a></li>
                   <li class="page-item">
                     <a class="page-link" href="#" aria-label="Next">
                       <i class="fa-solid fa-angles-right"></i>
                     </a>
-                  </li>
+                  </li> -->
                 </ul>
-              </nav>
+              </nav> 
               <!-- Pagignation End-->
             </div>
           </div>
@@ -363,6 +397,21 @@
                   </div>
                 </div>
               </div>
+
+              <!-- Recent Post Widget Start -->
+              <div class="blog_widget widget-popular-tags">
+                <h3 class="bw_title">Search Here</h3>
+                <div class="tags d-flex flex-wrap">
+                  <a href="#">Apps</a>
+                  <a href="#">Charity</a>
+                  <a href="#">Data</a>
+                  <a href="#">Design</a>
+                  <a href="#">Landing</a>
+                  <a href="#">Website</a>
+                  <a href="#">Apps</a>
+                  <a href="#">Charity</a>
+                </div>
+            </div>
             </aside>
             <!-- Aside End -->
           </div>
@@ -512,6 +561,33 @@
       ></script>
       <script src="/js/bootstrap.min.js"></script>
       <script src="./js/custom.js"></script>
+      <!-- <script>
+        // Pagination Start  
+        pageSize = 3;
+
+        var pageCount =  $(".post_item").length / pageSize;
+          
+          for(var i = 0 ; i<pageCount;i++){
+              
+            $("#pagin").append('<li><a href="#">'+(i+1)+'</a></li> ');
+          }
+              $("#pagin li").first().find("a").addClass("current")
+          showPage = function(page) {
+            $(".post_item").hide();
+            $(".post_item").each(function(n) {
+                if (n >= pageSize * (page - 1) && n < pageSize * page)
+                    $(this).show();
+            });        
+        }
+    
+        showPage(1);
+
+        $("#pagin li a").click(function() {
+            $("#pagin li a").removeClass("current");
+            $(this).addClass("current");
+            showPage(parseInt($(this).text())) 
+        });
+      </script> -->
     </body>
   </html>
   

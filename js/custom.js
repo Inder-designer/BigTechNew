@@ -1,15 +1,11 @@
-console.log('external');
-
-  var today = new Date();
-  var yesterday = new Date(today);
-  let data =  yesterday.setDate(today.getDate() - 1)
-  let newData = new Date(data)
-  console.log(newData,"newdata")
-
-  console.log( yesterday.setDate(today.getDate() - 1))
+$(document).ready(function(){
+        $('#india').click(function(){
+          $('html').attr("lang","es")
+        })
+      })
 
   
-$(document).ready(function () {
+      $(document).ready(function () {
         $(".slider_outer").slick({
           dots: false,
           infinite: true,
@@ -49,6 +45,7 @@ $(document).ready(function () {
             // instead of a settings object
           ],
         });
+
         $(".team-slider").slick({
           dots: false,
           infinite: true,
@@ -79,6 +76,7 @@ $(document).ready(function () {
           ],
         });
       });
+
       window.onload = function () {
         Particles.init({
           selector: ".particles",
@@ -102,6 +100,7 @@ $(document).ready(function () {
           ],
         });
       };
+
       $(document).ready(function () {
         $(".nav_btn").click(function () {
           $(".side-menu").toggleClass("menu-show");
@@ -123,6 +122,34 @@ $(document).ready(function () {
           }
         })
       });
+
+      // Pagination Start  
+        pageSize = 3;
+
+        var pageCount =  $(".post_item").length / pageSize;
+          
+          for(var i = 0 ; i<pageCount;i++){
+              
+            $("#pagin").append('<li><a href="#">'+(i+1)+'</a></li> ');
+          }
+              $("#pagin li").first().find("a").addClass("current")
+          showPage = function(page) {
+            $(".post_item").hide();
+            $(".post_item").each(function(n) {
+                if (n >= pageSize * (page - 1) && n < pageSize * page)
+                    $(this).show();
+            });        
+        }
+    
+        showPage(1);
+
+        $("#pagin li a").click(function() {
+            $("#pagin li a").removeClass("current");
+            $(this).addClass("current");
+            showPage(parseInt($(this).text())) 
+        });
+
+      // Form Submit 
       document .getElementById("myForm").addEventListener("submit", function (event) {
           event.preventDefault();
           $.ajax({
@@ -139,33 +166,38 @@ $(document).ready(function () {
           event.target.reset();
         });
 
-let navlinks = document.querySelectorAll(".nav-item");
-navlinks.forEach(a=>{
-  a.addEventListener('click',function(){
-    navlinks.forEach(a=>a.classList.remove('active'));
-  })})
 
-  (function () {
-    const second = 1000,
-          minute = second * 60,
-          hour = minute * 60,
-          day = hour * 24;
-  
-    //I'm adding this section so I don't have to keep updating this pen every year :-)
-    //remove this if you don't need it
-    let today = new Date(),
-        dd = String(today.getDate()).padStart(2, "0"),
-        mm = String(today.getMonth() + 1).padStart(2, "0"),
-        yyyy = today.getFullYear(),
-        nextYear = yyyy + 1,
-        dayMonth = "02/10/",
-        birthday = dayMonth + yyyy;
+
+        // Navbar Active 
+      let navlinks = document.querySelectorAll(".nav-item");
+      navlinks.forEach(a=>{
+        a.addEventListener('click',function(){
+          navlinks.forEach(a=>a.classList.remove('active'));
+      })})
+
+
+      console.log('test hello');
+    (function () {
+      const second = 1000,
+            minute = second * 60,
+            hour = minute * 60,
+            day = hour * 24;
     
-    today = mm + "/" + dd + "/" + yyyy;
+      //I'm adding this section so I don't have to keep updating this pen every year :-)
+      //remove this if you don't need it
+      let today = new Date(),
+          dd = String(today.getDate()).padStart(2, "0"),
+          mm = String(today.getMonth() + 1).padStart(2, "0"),
+          yyyy = today.getFullYear(),
+          nextYear = yyyy + 1,
+          dayMonth = "02/10/",
+          birthday = dayMonth + yyyy;
+      
+      today = mm + "/" + dd + "/" + yyyy;
+      
+      //end
     
-    //end
-    
-    const countDown = new Date(birthday).getTime(),
+      const countDown = new Date(birthday).getTime(),
         x = setInterval(function() {    
   
           const now = new Date().getTime(),
@@ -181,4 +213,5 @@ navlinks.forEach(a=>{
           //seconds
         }, 0)
     }());
+
       
