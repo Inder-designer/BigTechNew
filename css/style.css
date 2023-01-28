@@ -637,7 +637,7 @@ header {
     padding: 0;
     position: relative;
 }
-.chart_sec .chart_wrap .active .nav-link::after{
+.chart_sec .chart_wrap .active.nav-link::after{
     content: "";
     position: absolute;
     left: 0;

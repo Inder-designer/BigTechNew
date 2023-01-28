@@ -135,6 +135,7 @@ a{
 }
 .post_btn a:hover{
     background-color: #00c4f4;
+    color: #fff !important;
 }
 .blogpost_wrap .pagination li{
     margin: 0 5px;
@@ -309,6 +310,9 @@ a{
     .post_item .post_content .title {
         font-size: 30px;
     }
+    .breadcrumb_wrap .title {
+        font-size: 45px;
+    }    
 }
 @media screen and (max-width: 767.98px){
     .post_item .post_content .title {
@@ -317,14 +321,17 @@ a{
     .post_content .post_btn a {
         padding: 16px 20px;
     }
+    .breadcrumb_wrap .title {
+        font-size: 35px;
+    }
 }
 @media screen and (max-width: 575.98px){
     .breadcrumb_wrap .title {
-        font-size: 45px;
+        font-size: 24px;
         margin-bottom: 15px;
     }
     .breadcrumb_wrap .breadcrumb .breadcrumb-item {
-        font-size: 16px;
+        font-size: 12 px;
     }
     .breadcrumb_sec {
         padding: 140px 0 120px;
