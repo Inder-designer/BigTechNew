@@ -15,11 +15,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/style.css" />
@@ -38,8 +34,12 @@
               class="navbar-nav justify-content-center mb-2 mb-lg-0 align-items-center"
               id="nav_menu"
             >
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+              <li class="nav-item cstm_dropdown">
+                <a class="nav-link">Home</a>
+                <ul class="dropdown_item">
+                <li><a href="./index.html">Home 1</a></li>
+                <li><a href="./Index-2.html">Home 2</a></li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about">About Us</a>
@@ -63,10 +63,10 @@
           </div>
           <div class="nav_right d-flex">
             <ul class="navbar-nav mb-0 align-items-center">
-              <li class="nav-item header-lang d-none d-xl-block">
+              <li class="nav-item cstm_dropdown d-none d-xl-block">
                 <span class="selected_lang">ENG</span>
-                <ul class="lang-list">
-                  <li><a href="#" id="india">IND</a></li>
+                <ul class="dropdown_item">
+                  <li><a href="#">IND</a></li>
                   <li><a href="#">SPA</a></li>
                   <li><a href="#">GRE</a></li>
                   <li><a href="#">CIN</a></li>
@@ -561,33 +561,6 @@
       ></script>
       <script src="/js/bootstrap.min.js"></script>
       <script src="./js/custom.js"></script>
-      <!-- <script>
-        // Pagination Start  
-        pageSize = 3;
-
-        var pageCount =  $(".post_item").length / pageSize;
-          
-          for(var i = 0 ; i<pageCount;i++){
-              
-            $("#pagin").append('<li><a href="#">'+(i+1)+'</a></li> ');
-          }
-              $("#pagin li").first().find("a").addClass("current")
-          showPage = function(page) {
-            $(".post_item").hide();
-            $(".post_item").each(function(n) {
-                if (n >= pageSize * (page - 1) && n < pageSize * page)
-                    $(this).show();
-            });        
-        }
-    
-        showPage(1);
-
-        $("#pagin li a").click(function() {
-            $("#pagin li a").removeClass("current");
-            $(this).addClass("current");
-            showPage(parseInt($(this).text())) 
-        });
-      </script> -->
     </body>
   </html>
   

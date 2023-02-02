@@ -11,6 +11,9 @@ a{
     position: absolute;
     transition: all .3s;
 }
+.blog-header .nav-menu .navbar-nav .nav-link:hover::before{
+    content: none;
+}
 .sticky_header{
     position: fixed;
     background-color: #030B15;
